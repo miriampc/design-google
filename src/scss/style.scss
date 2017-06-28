@@ -1,0 +1,30 @@
+@import "variables";
+@import "grid";
+.container {
+  width: 100%;
+  padding: 3% 5%;
+}
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  @extend %flex;
+  flex-flow: wrap;
+  padding-top: 4rem;
+  &__logo {
+    @extend %flex;
+    padding-bottom: 1rem;
+  }
+  &__navigation {
+    @extend %flex;
+    li {
+      display: inline-block;
+      margin-right: 14px;
+    }
+  }
+}
+
+
+
