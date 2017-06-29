@@ -96,21 +96,28 @@ img {
       width: auto;
     }
   }
-  &__item div{
+  &__quote div{
     @extend %flex;
     justify-content: flex-start;
     img{
+      width: 48px;
       border-radius: 50%;
     }
   }
-  .quote {
+  &__quote {
     @extend %border;
     margin: 0;
-    //padding: 0;
   }
 }
 
-//
+//Collection
+.collection {
+  @extend %border;
+  &__row {
+    @extend %flex;
+    align-items: flex-start;
+  }
+}
 
 
 
