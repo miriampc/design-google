@@ -43,12 +43,37 @@
 
 //Newsfeed
 .newsfeed {
-  @extend %flex;
-  //flex-flow: column wrap;
   &__header {
+    @extend %flex;
+    border-top: 4px solid #4285f4;
     width: 100%;
+    a {
+      float: right;
+      color: #4285f4;
+    }
+  }
+  &__featured {
+    @extend %flex;
+    img {
+      width: 100%;
+    }
+  }
+  .block {
+    margin-bottom: 40px;
+    &__text a {
+      color: #4285f4;
+    }
+    &__img img {
+      width: 60px;
+    }
+  }
+  .newsletter {
+    @extend %flex;
+    padding: 21px;
+    background-color: #f1f3f4;
   }
 }
+
 
 
 
