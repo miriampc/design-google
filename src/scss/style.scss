@@ -1,7 +1,7 @@
 @import "variables";
 @import 'reset';
 @import "grid";
-.container {
+%container {
   width: 100%;
   padding: 3% 5%;
 }
@@ -20,6 +20,7 @@ img {
 }
 //Header
 .header {
+  @extend %container;
   @extend %flex;
   flex-flow: wrap;
   padding-top: 4rem;
@@ -43,6 +44,10 @@ img {
       color: #414549;
     }
   }
+}
+//Main Content
+.content {
+  @extend %container;
 }
 //Home
 .home {
@@ -130,6 +135,7 @@ img {
 
 //Footer About
 .footer {
+  @extend %container;
   &__about{
     @extend %border;
     @extend %flex;
@@ -144,7 +150,7 @@ img {
     .connect {
       @extend %flex;
       flex-flow: column wrap;
-      height: 140px;
+      height: 150px;
     }
   }
   &__secondary {
