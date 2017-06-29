@@ -262,7 +262,7 @@ li {
 img {
   width: 100%; }
 
-.newsfeed, .library, .library__quote, .collection {
+.newsfeed, .library, .library__quote, .collection, .social-media {
   border-top: 4px solid #4285f4;
   margin-top: 50px;
   padding-top: 50px; }
@@ -309,6 +309,8 @@ img {
     margin-bottom: 70px; }
   .library__item span img {
     width: auto; }
+  .library__item div img {
+    width: 48px; }
   .library__quote div {
     justify-content: flex-start; }
     .library__quote div img {

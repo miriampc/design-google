@@ -96,6 +96,11 @@ img {
       width: auto;
     }
   }
+  &__item div{
+    img{
+      width: 48px;
+    }
+  }
   &__quote div{
     @extend %flex;
     justify-content: flex-start;
@@ -117,6 +122,10 @@ img {
     @extend %flex;
     align-items: flex-start;
   }
+}
+//Social media
+.social-media {
+  @extend %border;
 }
 
 
