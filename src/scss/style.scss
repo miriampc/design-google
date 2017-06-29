@@ -128,6 +128,35 @@ img {
   @extend %border;
 }
 
+//Footer About
+.footer {
+  &__about{
+    @extend %border;
+    @extend %flex;
+    align-items: flex-start;
+    color: #414549;
+    h4 {
+      margin-bottom: 14px;
+    }
+    a {
+      color: #414549;
+    }
+    .connect {
+      @extend %flex;
+      flex-flow: column wrap;
+      height: 140px;
+    }
+  }
+  &__secondary {
+    @extend %flex;
+    height: 146px;
+    box-shadow: 0 -0.1875rem 0.125rem #efefef;
+    img {
+      width: 32px;
+    }
+  }
+}
+
 
 
 
