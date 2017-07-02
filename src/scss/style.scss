@@ -13,6 +13,13 @@
 img {
   width: 100%;
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: #fff;
+}
 %border {
   border-top: 4px solid #4285f4;
   margin-top: 50px;
@@ -48,6 +55,7 @@ img {
 //Main Content
 .content {
   @extend %container;
+  margin-top: 170px;
 }
 //Home
 .home {
@@ -64,6 +72,7 @@ img {
   &__header {
     @extend %flex;
     margin-bottom: 1.2rem;
+    justify-content: space-between;
     a {
       float: right;
       color: #4285f4;
@@ -72,6 +81,7 @@ img {
   &__featured {
     @extend %flex;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
   .block {
     margin-bottom: 40px;
@@ -126,6 +136,7 @@ img {
   &__row {
     @extend %flex;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
 }
 //Social media
@@ -163,6 +174,16 @@ img {
   }
 }
 
-
-
-
+@media screen and (max-width: 500px) {
+  .header {
+    &__logo img{
+      width: 80%;
+    }
+    &__navigation {
+      display: none;
+    }
+  }
+  .content {
+    margin-top: 130px;
+  }
+}
